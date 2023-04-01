@@ -1,0 +1,124 @@
+img {
+  max-width: 5rem;
+  padding: 14px;
+}
+
+.navigation {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: #aa1deb;
+  box-shadow: 0 2px 2px 2px #aa1deb;
+  transition: 0.3s;
+}
+.brand-name {
+  margin-left: 2rem;
+}
+nav.sticky {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+}
+.navigation-menu {
+  margin-left: 550px;
+  font-size: large;
+  font-family: "Roboto mono", sans-serif;
+  padding-top: 10px;
+}
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #aa1deb;
+  padding: 20px;
+}
+.navigation-menu li a:hover {
+  color: #000000;
+}
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #aa1deb;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #bc2aff;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 2px solid #aa1deb;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: #aa1deb;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+    border: 2px;
+    border-style: solid;
+    border-color: #aa1deb;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .navigation-menu {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navigation-menu {
+    margin-left: 20px;
+  }
+}
