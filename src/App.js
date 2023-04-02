@@ -2,6 +2,7 @@ import logo from "./logo.png";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
 
       <AboutMe />
 
-      {/* <Projects /> */}
+      <Projects />
       {/* <Education /> */}
 
       {/* <Contact /> */}
