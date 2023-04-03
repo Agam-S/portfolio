@@ -1,6 +1,7 @@
 import "../styles/NavBar.css";
 import logo from "./logo.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -48,16 +49,52 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <a href="#home">About Me</a>
+              <Link
+                activeClass="active"
+                spy
+                to="about"
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
+                About Me
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link
+                activeClass="active"
+                spy
+                to="projects"
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#education">Education</a>
+              <Link
+                activeClass="active"
+                spy
+                to="links"
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
+                Links
+              </Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link
+                activeClass="active"
+                spy
+                to="contact"
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

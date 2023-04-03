@@ -1,0 +1,57 @@
+/* banner and form css */
+
+.banner-c {
+  margin-top: 10px;
+  background-color: #aa1deb;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Roboto mono", sans-serif;
+}
+
+.banner-title-c {
+  text-align: center;
+}
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formtext {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  width: 500px;
+}
+.textArea {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  width: 500px;
+  height: 200px;
+}
+.formButton {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  width: 500px;
+  background-color: #ffffff;
+  color: #aa1deb;
+}
+.formButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

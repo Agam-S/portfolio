@@ -18,6 +18,16 @@ img {
 .brand-name {
   margin-left: 2rem;
 }
+.active {
+  font-weight: bold;
+}
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: #000000;
+}
 nav.sticky {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
   position: sticky;
