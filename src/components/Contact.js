@@ -1,24 +1,26 @@
-import axios from "axios";
 import "../styles/Contact.css";
 
 export default function Contact() {
-  // use google form link to submit name email and message
-
   const handleClick = (event) => {
     event.preventDefault();
     const formLink =
-      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSecMMLo7ygI7m7NrfdEULVUZj-oFVArPa3DxAM8cLlQnpmlFg/formResponse";
+      "https://v1.nocodeapi.com/agam_singh/google_sheets/VIPWLYigGQNRewcC?tabId=Sheet1";
     const name = document.querySelector(".formtext").value;
     const email = document.querySelector(".formtext:nth-child(2)").value;
     const message = document.querySelector(".textArea").value;
 
-    const name_entry = "entry.1282777015";
-    const email_entry = "entry.356948375";
-    const message_entry = "entry.753230595";
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const requestOptions = {
+      method: "post",
+      headers: myHeaders,
+      body: JSON.stringify([
+        [name, email, message, new Date().toLocaleString()],
+      ]),
+    };
 
-    const url = `${formLink}?${name_entry}=${name}&${email_entry}=${email}&${message_entry}=${message}`;
     try {
-      axios.post(url);
+      fetch(formLink, requestOptions);
       alert("Message Sent");
     } catch (error) {
       alert("Message failed, please try contacting- singh.agam0009@gmail.com");
