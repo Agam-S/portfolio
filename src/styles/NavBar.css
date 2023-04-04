@@ -32,6 +32,7 @@ nav.sticky {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
+  z-index: 500;
 }
 .navigation-menu {
   margin-left: 550px;

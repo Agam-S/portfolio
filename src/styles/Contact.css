@@ -55,3 +55,18 @@
   background-color: #000000;
   color: #ffffff;
 }
+/* mobile friendly */
+@media (max-width: 768px) {
+  .banner-c {
+    height: 100vh;
+  }
+  .formtext {
+    width: 300px;
+  }
+  .textArea {
+    width: 300px;
+  }
+  .formButton {
+    width: 300px;
+  }
+}

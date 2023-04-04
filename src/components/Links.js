@@ -1,4 +1,5 @@
 import "../styles/Links.css";
+import resume from "../docs/Agam_Singh_Resume.pdf";
 
 export default function Links() {
   return (
@@ -8,19 +9,19 @@ export default function Links() {
           <h1 className="banner-title-l">Useful Links</h1>
           <div className="links">
             <a
-              //   href={resume}
+              href={resume}
               download="Agam_Singh_Resume.pdf"
               className="btn button"
             >
               Resume
             </a>
-            <a
+            {/* <a
               //   href={cv}
               download="Agam_Singh_CV.pdf"
               className="btn button"
             >
               CV
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/agamsingh0009/"
               target="_blank"
