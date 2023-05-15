@@ -169,7 +169,7 @@ export default function Projects() {
                         Angular, ExpressJS, JWT, Hash & Salt,
                       </h6>
                       <p class="card-text">
-                        I made this app becuase I wanted to make an app that
+                        I made this app because I wanted to make an app that
                         used CRUD operations (create family or friend objects to
                         store some information) and used user authentication.
                         The authentication system is created from scratch that
